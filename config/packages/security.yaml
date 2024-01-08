@@ -5,18 +5,19 @@ security:
     # https://symfony.com/doc/current/security.html#loading-the-user-the-user-provider
     providers:
         users_in_memory: { memory: null }
-        users_in_database:
-        entity:
-            class: App\Entity\User
-            property: email
+        app_user_provider:
+            entity:
+                class: App\Entity\User
+                property: email
     firewalls:
         dev:
             pattern: ^/(_(profiler|wdt)|css|images|js)/
             security: false
         main:
             lazy: true
-            provider: users_in_database
+            provider: users_in_memory
             form_login:
+                # "app_login" is the name of the route created previously
                 login_path: app_login
                 check_path: app_login
             logout:

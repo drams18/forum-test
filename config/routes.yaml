@@ -15,3 +15,12 @@ app_register:
 app_login:
     path: /login
     controller: App\Controller\LoginController::login
+    
+
+app_security:
+    path: /secure-page
+    controller: App\Controller\SecurityController::index
+
+app_logout:
+    path: /logout
+    controller: App\Controller\SecurityController::logout
