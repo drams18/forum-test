@@ -91,6 +91,10 @@ class __TwigTemplate_6fd1fcd6e3c7d03936c0a219c513a812 extends Template
         // line 17
         echo "/Users/dramsss/Documents/Projets Perso/Symfony/forum/templates/login/index.html.twig";
         echo "\">templates/login/index.html.twig</a></code></li>
+     <a href=\"";
+        // line 18
+        echo $this->extensions['Symfony\Bridge\Twig\Extension\RoutingExtension']->getPath("app_home");
+        echo "\">Home</a>
     </ul>
 </div>
 ";
@@ -120,7 +124,7 @@ class __TwigTemplate_6fd1fcd6e3c7d03936c0a219c513a812 extends Template
      */
     public function getDebugInfo()
     {
-        return array (  92 => 17,  88 => 16,  81 => 12,  73 => 6,  66 => 5,  53 => 3,  36 => 1,);
+        return array (  96 => 18,  92 => 17,  88 => 16,  81 => 12,  73 => 6,  66 => 5,  53 => 3,  36 => 1,);
     }
 
     public function getSourceContext()
@@ -142,6 +146,7 @@ class __TwigTemplate_6fd1fcd6e3c7d03936c0a219c513a812 extends Template
     <ul>
         <li>Your controller at <code><a href=\"{{ '/Users/dramsss/Documents/Projets Perso/Symfony/forum/src/Controller/LoginController.php'}}\">src/Controller/LoginController.php</a></code></li>
         <li>Your template at <code><a href=\"{{ '/Users/dramsss/Documents/Projets Perso/Symfony/forum/templates/login/index.html.twig'}}\">templates/login/index.html.twig</a></code></li>
+     <a href=\"{{ path('app_home') }}\">Home</a>
     </ul>
 </div>
 {% endblock %}

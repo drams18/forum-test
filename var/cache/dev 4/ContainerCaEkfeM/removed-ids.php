@@ -158,7 +158,7 @@ return [
     'App\\Form\\RegistrationFormType' => true,
     'App\\Repository\\UserRepository' => true,
     'App\\Security\\EmailVerifier' => true,
-    'App\\Security\\LoginFormAuthentificatorAuthenticator' => true,
+    'App\\Security\\LoginFormAuthenticator' => true,
     'Doctrine\\Bundle\\DoctrineBundle\\Controller\\ProfilerController' => true,
     'Doctrine\\Bundle\\DoctrineBundle\\Dbal\\ManagerRegistryAwareConnectionProvider' => true,
     'Doctrine\\Common\\Persistence\\ManagerRegistry' => true,
