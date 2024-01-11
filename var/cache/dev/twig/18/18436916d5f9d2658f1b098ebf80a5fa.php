@@ -68,7 +68,9 @@ class __TwigTemplate_e733301b175f712972ce5a5f4361a9f6 extends Template
         $__internal_6f47bbe9983af81f1e7450e9a3e3768f->enter($__internal_6f47bbe9983af81f1e7450e9a3e3768f_prof = new \Twig\Profiler\Profile($this->getTemplateName(), "block", "body"));
 
         // line 3
-        echo "<form method=\"post\">
+        echo "<form method=\"post\" action=\"";
+        echo $this->extensions['Symfony\Bridge\Twig\Extension\RoutingExtension']->getPath("app_login");
+        echo "\">
   ";
         // line 4
         if ((isset($context["error"]) || array_key_exists("error", $context) ? $context["error"] : (function () { throw new RuntimeError('Variable "error" does not exist.', 4, $this->source); })())) {
@@ -107,7 +109,7 @@ class __TwigTemplate_e733301b175f712972ce5a5f4361a9f6 extends Template
         // line 19
         echo twig_escape_filter($this->env, (isset($context["last_username"]) || array_key_exists("last_username", $context) ? $context["last_username"] : (function () { throw new RuntimeError('Variable "last_username" does not exist.', 19, $this->source); })()), "html", null, true);
         echo "\"
-    name=\"email\"
+    name=\"_username\"
     id=\"inputEmail\"
     class=\"form-control\"
     autocomplete=\"email\"
@@ -166,14 +168,14 @@ class __TwigTemplate_e733301b175f712972ce5a5f4361a9f6 extends Template
      */
     public function getDebugInfo()
     {
-        return array (  139 => 44,  132 => 40,  108 => 19,  101 => 14,  95 => 11,  91 => 10,  88 => 9,  85 => 8,  79 => 6,  76 => 5,  74 => 4,  71 => 3,  36 => 1,);
+        return array (  141 => 44,  134 => 40,  110 => 19,  103 => 14,  97 => 11,  93 => 10,  90 => 9,  87 => 8,  81 => 6,  78 => 5,  76 => 4,  71 => 3,  36 => 1,);
     }
 
     public function getSourceContext()
     {
         return new Source("{% extends 'base.html.twig' %} {% block title %}Log in!{% endblock %} {% block
 body %}
-<form method=\"post\">
+<form method=\"post\" action=\"{{ path('app_login') }}\">
   {% if error %}
   <div class=\"alert alert-danger\">
     {{ error.messageKey|trans(error.messageData, 'security') }}
@@ -190,7 +192,7 @@ body %}
   <input
     type=\"email\"
     value=\"{{ last_username }}\"
-    name=\"email\"
+    name=\"_username\"
     id=\"inputEmail\"
     class=\"form-control\"
     autocomplete=\"email\"

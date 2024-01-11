@@ -1,0 +1,12 @@
+a5efba,127.0.0.1,GET,http://127.0.0.1:8000/secure-page,1704880115,,200,request
+e476cc,127.0.0.1,GET,http://127.0.0.1:8000/secure-page,1704881796,,200,request
+75b87d,127.0.0.1,POST,http://127.0.0.1:8000/login,1704881802,,302,request
+540ee4,127.0.0.1,GET,http://127.0.0.1:8000/login,1704881802,,200,request
+b6d05f,127.0.0.1,GET,http://127.0.0.1:8000/secure-page,1704882632,,200,request
+99775c,127.0.0.1,POST,http://127.0.0.1:8000/login,1704882638,,302,request
+3967fc,127.0.0.1,GET,http://127.0.0.1:8000/login,1704882638,,200,request
+21f6d6,127.0.0.1,GET,http://127.0.0.1:8000/home,1704882666,,200,request
+c336af,127.0.0.1,GET,http://127.0.0.1:8000/secure-page,1704882670,,200,request
+e9f70a,127.0.0.1,GET,http://127.0.0.1:8000/login,1704882672,,200,request
+69633a,127.0.0.1,GET,http://127.0.0.1:8000/register,1704882675,,200,request
+2a033d,127.0.0.1,GET,http://127.0.0.1:8000/home,1704967538,,200,request
