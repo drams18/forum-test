@@ -24,3 +24,7 @@ app_security:
 app_logout:
     path: /logout
     controller: App\Controller\SecurityController::logout
+
+app_admin:
+    resource: '../src/Controller/AdminController.php'
+    type: annotation
