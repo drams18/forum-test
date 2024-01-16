@@ -3831,14 +3831,14 @@
       <argument type="service" id="security.authentication.failure_handler.main.form_login"/>
       <argument type="collection">
         <argument key="login_path">app_login</argument>
-        <argument key="check_path">app_login</argument>
+        <argument key="check_path">app_login_check</argument>
         <argument key="username_parameter">_username</argument>
-        <argument key="use_forward">false</argument>
         <argument key="password_parameter">_password</argument>
+        <argument key="post_only">true</argument>
+        <argument key="use_forward">false</argument>
         <argument key="csrf_parameter">_csrf_token</argument>
         <argument key="csrf_token_id">authenticate</argument>
         <argument key="enable_csrf">false</argument>
-        <argument key="post_only">true</argument>
         <argument key="form_only">false</argument>
       </argument>
     </service>
